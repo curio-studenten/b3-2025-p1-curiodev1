@@ -47,6 +47,16 @@ if($action == "delete"){
     
 }
 
+<?php
+        require_once '../backend/conn.php';
+        $query = "SELECT * FROM taken WHERE status != 'done' ";
+        $statement = $conn->prepare($query);
+        $statement->execute();
+        $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        
+        ?>
+
 
 header("Location: ../tasks/index.php");
 
