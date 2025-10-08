@@ -48,5 +48,7 @@ if($action == "delete"){
 }
 
 
+header("Location: ../tasks/index.php");
+
 
 ?>
