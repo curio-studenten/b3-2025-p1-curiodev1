@@ -21,7 +21,6 @@
         
         </header>
     </section>
-    <h1>Taken</h1>
     <div class="kanban_container">
         <div class="todo_container">
 
