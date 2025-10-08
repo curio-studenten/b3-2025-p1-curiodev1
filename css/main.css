@@ -576,9 +576,12 @@ nav a:not(:hover) {
   padding-right: 5px;
   background-color: grey;
   color: whitesmoke;
-  font-weight: bold;
   font-family: "Roboto", sans-serif;
   margin-top: 7px;
+}
+
+.todo_main span{
+  font-weight: bold;
 }
 
 .doing_main{

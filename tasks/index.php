@@ -41,9 +41,9 @@
                     ?>
                     <?php foreach($items as $item): ?>
                         <div class="todo_main">
-                            <p>Titel: <?php echo htmlspecialchars($item['titel']); ?></p>
-                            <p>Afdeling: <?php echo htmlspecialchars($item['afdeling']); ?></p>
-                            <p>Beschrijving: <?php echo htmlspecialchars($item['beschrijving']); ?></p>
+                            <p><span>Titel:</span> <?php echo htmlspecialchars($item['titel']); ?></p>
+                            <p><span>Afdeling:</span> <?php echo htmlspecialchars($item['afdeling']); ?></p>
+                            <p><span>Beschrijving:</span> <?php echo htmlspecialchars($item['beschrijving']); ?></p>
                         </div>
                     <?php endforeach; ?>
                 
