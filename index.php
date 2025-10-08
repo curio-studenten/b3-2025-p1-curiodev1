@@ -6,7 +6,7 @@
     <?php require_once 'head.php'; ?>
 </head>
 
-<body>
+<body class="homepage_body">
     
     <section class="header">
         <header>

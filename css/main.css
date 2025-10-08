@@ -294,7 +294,7 @@ label{
   }
 }
 
-body {
+.homepage_body {
   position: relative;
   margin: 0;
   height: 100vh;
@@ -302,7 +302,7 @@ body {
   background-size: cover;
 }
 
-body::before {
+.homepage_body::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -310,6 +310,7 @@ body::before {
   background-color: rgba(44, 44, 44, 0.4);
   z-index: 0;
 }
+
 
 .wrapper, nav, .homepage, .text_container {
   position: relative;
@@ -353,6 +354,16 @@ nav a{
   border-radius: 12px;
   font-weight: bold;
   
+}
+
+
+
+.tasks_index_body{
+  background-color: rgb(190, 190, 190);
+}
+
+.header_tasks{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header_logo{
