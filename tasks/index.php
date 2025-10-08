@@ -21,8 +21,20 @@
         
         </header>
     </section>
-  <h1>Taken</h1>
+    <h1>Taken</h1>
+    <div class="kanban_container">
+        <div class="todo_container">
 
-<p><a href="create.php" class="btn btn-primary">➕ Nieuwe taak maken</a></p>
+        </div>
+        <div class="doing_container">
+
+        </div>
+        <div class="done_container">
+            
+        </div>
+    </div>
+
+
+    <p><a href="create.php" class="btn btn-primary">➕ Nieuwe taak maken</a></p>
 </body>
 </html>

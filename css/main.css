@@ -359,7 +359,7 @@ nav a{
 
 
 .tasks_index_body{
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(97, 97, 97);
 }
 
 .header_tasks{
@@ -473,4 +473,32 @@ nav a:not(:hover) {
 .btn-primary:hover {
   filter: brightness(1.15);
   transform: translateY(-2px);
+}
+
+
+.kanban_container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.todo_container{
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+  border-radius: 13%;
+  width: 400px;
+  height: 550px;
+  background-color: rgb(54, 54, 54);
+}
+.doing_container{
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+  border-radius: 13%;
+  width: 400px;
+  height: 550px;
+  background-color: rgb(54, 54, 54);
+}
+.done_container{
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+  border-radius: 13%;
+  width: 400px;
+  height: 550px;
+  background-color: rgb(54, 54, 54);
 }
