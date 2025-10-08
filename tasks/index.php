@@ -15,6 +15,7 @@
             <nav>
             <a href="../index.php">Home</a>
             <a href="index.php">Takenlijst</a>
+            <a href="overview.php">Overview</a>
             
             </nav>
         </div>
@@ -51,10 +52,10 @@
         <div class="doing_container">
             <h2>Doing</h2>
             <div class="doing_tasks">
+
+                
                 <div class="doing_main">
-                    <p>Titel: </p>
-                    <p>Afdeling:</p>
-                    <p>Beschrijving:</p>
+                    
                     
                 </div>
             </div>
