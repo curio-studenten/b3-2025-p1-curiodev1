@@ -23,6 +23,6 @@
     </section>
   <h1>Taken</h1>
 
-  <p><a href="create.php">Nieuwe taak maken</a></p>
+<p><a href="create.php" class="btn btn-primary">➕ Nieuwe taak maken</a></p>
 </body>
 </html>
