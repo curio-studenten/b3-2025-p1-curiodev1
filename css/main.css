@@ -593,5 +593,21 @@ nav a:not(:hover) {
   color: whitesmoke;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-}
+  margin-top: 7px;
 
+}
+.done_main{
+  width: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding-top: 1px;
+  padding-bottom:  1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: grey;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-top: 7px;
+
+}

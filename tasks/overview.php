@@ -15,13 +15,13 @@
             <nav>
             <a href="../index.php">Home</a>
             <a href="index.php">Takenlijst</a>
-            <a href="overview.php">Overview</a>
-
-            
+            <a href="overview.php">Overview</a> 
             </nav>
-        </div>
-        
+        </div> 
         </header>
     </section>
+
+
+
 </body>
 </html>
