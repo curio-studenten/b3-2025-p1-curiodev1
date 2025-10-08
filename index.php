@@ -13,8 +13,8 @@
         <div class="wrapper">
             <img class="header_logo" src="img/logo-big-v2.png" alt="">
             <nav>
-            <a href="#">Home</a>
-            <a href="#">Takenlijst</a>
+            <a href="index.php">Home</a>
+            <a href="tasks/index.php">Takenlijst</a>
             
             </nav>
         </div>
