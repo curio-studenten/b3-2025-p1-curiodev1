@@ -6,6 +6,8 @@
     <title>Overview</title>
     <?php require_once '../head.php'; ?>
 
+
+
 </head>
 <body class="tasks_index_body">
     <section class="header_tasks">
@@ -37,6 +39,7 @@
                 <th>Titel</th>
                 <th>Afdeling</th>
                 <th>Status</th>
+                <th>Edit</th>
 
 
             </tr>
@@ -44,8 +47,11 @@
                 <tr>
                     <td><?php echo $taak['titel']; ?></td>
                     <td><?php echo $taak['afdeling']; ?></td>
-                    <td><?php echo $taak['status']; ?></td>
+                    <td><?php echo $taak['status']; ?></td> 
+                    <td><a href="edit.php?id=<?php echo $taak['id']; ?>">aanpassen</a></td>
+
                 </tr>
+
             
             <?php endforeach; ?>
         </table>

@@ -656,3 +656,8 @@ td {
   color: rgb(255, 255, 255);
 }
 
+table a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid whitesmoke;
+}

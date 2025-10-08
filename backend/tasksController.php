@@ -40,23 +40,47 @@ if($action == "create"){
 }
 
 if($action == "update"){
-    
+
+
+    $id = $_POST['id'];
+    $titel = $_POST['titel'];
+    if(is_numeric($titel))
+    {
+         echo "<script>
+                    alert('Vul bij de titel tekst in, geen getal!');
+                    window.history.back();
+                </script>";
+    exit;
+
+    }
+    $beschrijving = $_POST['beschrijving'];
+    $afdeling = $_POST['afdeling'];
+    $status = $_POST['status'];
+
+    if(isset($errors))
+    {
+        var_dump($errors);
+        die();
+    }
+
+    require_once 'conn.php';
+
+    $query = "UPDATE taken SET titel = :titel, beschrijving = :beschrijving, afdeling = :afdeling, status = :status WHERE id = :id";
+
+    $statement = $conn->prepare($query);
+    $statement->execute([
+        ":titel" => $titel,
+        ":beschrijving" => $beschrijving,
+        ":afdeling" => $afdeling,
+        ":status" => $status,
+        ":id" => $id
+
+    ]);
 }
 
 if($action == "delete"){
     
 }
-
-<?php
-        require_once '../backend/conn.php';
-        $query = "SELECT * FROM taken WHERE status != 'done' ";
-        $statement = $conn->prepare($query);
-        $statement->execute();
-        $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-        
-        ?>
-
 
 header("Location: ../tasks/index.php");
 
