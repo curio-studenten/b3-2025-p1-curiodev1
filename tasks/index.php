@@ -34,6 +34,8 @@
     </div>
 
 
-    <p><a href="create.php" class="btn btn-primary">➕ Nieuwe taak maken</a></p>
+    <div class="new-task">
+        <p><a href="create.php" class="btn btn-primary">➕ Nieuwe taak maken</a></p>
+    </div>
 </body>
 </html>
