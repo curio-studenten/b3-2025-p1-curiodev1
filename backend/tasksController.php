@@ -7,8 +7,23 @@ if($action == "create"){
     
 
     $titel = $_POST['titel'];
+    if(is_numeric($titel))
+    {
+         echo "<script>
+                    alert('Vul bij de titel tekst in, geen getal!');
+                    window.history.back();
+                </script>";
+    exit;
+
+    }
     $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
+
+    if(isset($errors))
+    {
+        var_dump($errors);
+        die();
+    }
 
     require_once 'conn.php';
 
