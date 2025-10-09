@@ -7,15 +7,6 @@ if($action == "create"){
     
 
     $titel = $_POST['titel'];
-    if(is_numeric($titel))
-    {
-         echo "<script>
-                    alert('Vul bij de titel tekst in, geen getal!');
-                    window.history.back();
-                </script>";
-    exit;
-
-    }
     $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
 
@@ -41,17 +32,7 @@ if($action == "create"){
 
 if($action == "update"){
 
-
     $titel = $_POST['titel'];
-    if(is_numeric($titel))
-    {
-         echo "<script>
-                    alert('Vul bij de titel tekst in, geen getal!');
-                    window.history.back();
-                </script>";
-    exit;
-
-    }
     $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
     $status = $_POST['status'];
@@ -79,5 +60,5 @@ if($action == "delete"){
 
 header("Location: ../tasks/index.php");
 
-
+exit;
 ?>

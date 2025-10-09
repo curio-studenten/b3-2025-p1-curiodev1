@@ -29,9 +29,9 @@
                 $taak = $statement->fetch(PDO::FETCH_ASSOC);
             
             ?>
-
-        <form action="../backend/tasksController.php" method="post">
-            <input type="hidden" name="action" value="<?php echo $id;?>">
+        <form action="<?php echo $base_url . '/backend/tasksController.php'; ?>" method="post">
+            <input type="hidden" name="action" value="update">
+            <input type="hidden" name="id" value="<?php echo $id;?>">
 
             <label for="titel">Titel:</label>
             <input type="text" id="titel" name="titel" placeholder="" value="<?php echo $taak['titel']; ?>" required>

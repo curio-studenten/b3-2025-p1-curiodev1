@@ -41,13 +41,14 @@
 
                 ?>
                 <?php foreach ($items as $item): ?>
-                    <div class="todo_main">
-                        <p><span>Titel:</span> <?php echo htmlspecialchars($item['titel']); ?></p>
-                        <p><span>Afdeling:</span> <?php echo htmlspecialchars($item['afdeling']); ?></p>
-                        <p><span>Beschrijving:</span> <?php echo htmlspecialchars($item['beschrijving']); ?></p>
-                        <a href="edit.php?id=<?php echo $item['id']; ?>">Bekijk inhoud of pas aan</a>
-
-                    </div>
+                    <?php if ($item['status'] == "todo"): ?>
+                        <div class="todo_main">
+                            <p><span>Titel:</span> <?= ($item['titel']); ?></p>
+                            <p><span>Afdeling:</span> <?= ($item['afdeling']); ?></p>
+                            <p><span>Beschrijving:</span> <?= ($item['beschrijving']); ?></p>
+                            <a href="edit.php?id=<?= $item['id']; ?>">Bekijk inhoud of pas aan</a>
+                        </div>
+                    <?php endif; ?>
                 <?php endforeach; ?>
 
             </div>
@@ -55,19 +56,32 @@
         <div class="doing_container">
             <h2>Doing</h2>
             <div class="doing_tasks">
-
-
-                <div class="doing_main">
-
-
-                </div>
+               <?php foreach ($items as $item): ?>
+                    <?php if ($item['status'] == "doing"): ?>
+                        <div class="todo_main">
+                            <p><span>Titel:</span> <?= ($item['titel']); ?></p>
+                            <p><span>Afdeling:</span> <?= ($item['afdeling']); ?></p>
+                            <p><span>Beschrijving:</span> <?= ($item['beschrijving']); ?></p>
+                            <a href="edit.php?id=<?= $item['id']; ?>">Bekijk inhoud of pas aan</a>
+                        </div>
+                    <?php endif; ?>
+                <?php endforeach; ?>
             </div>
         </div>
         <div class="done_container">
             <h2>Done</h2>
             <div class="done_tasks">
                 <div class="done_main">
-
+                    <?php foreach ($items as $item): ?>
+                        <?php if ($item['status'] == "done"): ?>
+                            <div class="todo_main">
+                                <p><span>Titel:</span> <?= ($item['titel']); ?></p>
+                                <p><span>Afdeling:</span> <?= ($item['afdeling']); ?></p>
+                                <p><span>Beschrijving:</span> <?= ($item['beschrijving']); ?></p>
+                                <a href="edit.php?id=<?= $item['id']; ?>">Bekijk inhoud of pas aan</a>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
