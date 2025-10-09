@@ -11,7 +11,7 @@
 <body class="tasks_index_body">
 
     <div class="container">
-        <h1>Nieuwe taak aanmaken</h1>
+        <h1>Taak aanpassen</h1>
 
         <?php
                 $id = $_GET['id'];
@@ -45,7 +45,7 @@
                 <option value="personeel" <?php if($taak['afdeling']=="personeel") echo "selected"; ?>>Personeel</option>
                 <option value="horeca" <?php if($taak['afdeling']=="horeca") echo "selected"; ?>>Horeca</option>
                 <option value="techniek" <?php if($taak['afdeling']=="techniek") echo "selected"; ?>>Techniek</option>
-                <option value="inkoop" <?php if($taak['afdeling']=="unkoop") echo "selected"; ?>>Inkoop</option>
+                <option value="inkoop" <?php if($taak['afdeling']=="inkoop") echo "selected"; ?>>Inkoop</option>
                 <option value="klantenservice" <?php if($taak['afdeling']=="klantenservice") echo "selected"; ?>>Klantenservice</option>
                 <option value="groen" <?php if($taak['afdeling']=="groen") echo "selected"; ?>>Groen</option>
             </select>
@@ -61,7 +61,7 @@
 
             <div class="buttons">
                 <button type="submit">Opslaan</button>
-                <a href="index.php" class="cancel">Annuleren</a>
+                <a href="overview.php" class="cancel">Annuleren</a>
             </div>
         </form>
   </div>

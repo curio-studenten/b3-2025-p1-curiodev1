@@ -2,10 +2,10 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Nieuwe taak aanmaken</title>
+  <title>Create task</title>
   <link rel="stylesheet" href="../css/create.css">
 </head>
-<body>
+<body class="tasks_index_body">
   <div class="container">
     <h1>Nieuwe taak aanmaken</h1>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Taken-Index</title>
+    <title>Takenlijst</title>
 
     <?php require_once '../head.php'; ?>
 
@@ -27,7 +27,6 @@
     <div class="kanban_container">
         <div class="todo_container">
             <h2>To-Do</h2>
-
             <div class="todo_tasks">
                 <?php
 
@@ -46,6 +45,8 @@
                         <p><span>Titel:</span> <?php echo htmlspecialchars($item['titel']); ?></p>
                         <p><span>Afdeling:</span> <?php echo htmlspecialchars($item['afdeling']); ?></p>
                         <p><span>Beschrijving:</span> <?php echo htmlspecialchars($item['beschrijving']); ?></p>
+                        <a href="edit.php?id=<?php echo $item['id']; ?>">Bekijk inhoud of pas aan</a>
+
                     </div>
                 <?php endforeach; ?>
 

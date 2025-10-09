@@ -42,7 +42,6 @@ if($action == "create"){
 if($action == "update"){
 
 
-    $id = $_POST['id'];
     $titel = $_POST['titel'];
     if(is_numeric($titel))
     {
@@ -56,12 +55,8 @@ if($action == "update"){
     $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
     $status = $_POST['status'];
+    $id = $_POST['id'];
 
-    if(isset($errors))
-    {
-        var_dump($errors);
-        die();
-    }
 
     require_once 'conn.php';
 
