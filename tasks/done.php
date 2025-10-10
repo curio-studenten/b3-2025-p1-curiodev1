@@ -24,13 +24,13 @@
     </section>
 
     <div class="overview_h1">
-        <h1>Taken met status To-Do & Doing</h1>
+        <h1>Taken met status Done</h1>
     </div>
 
      <div class="table_container">
         <?php
         require_once '../backend/conn.php';
-        $query = "SELECT * FROM taken WHERE status != 'done' ";
+        $query = "SELECT * FROM taken WHERE status = 'done' ";
         $statement = $conn->prepare($query);
         $statement->execute();
         $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -60,11 +60,10 @@
             <?php endforeach; ?>
         </table>
      </div>
-     <div class="overview_done_wrapper">
-        <div class="overview_done_link">
-            <a href="done.php">Klik hier voor de overzicht van de taken die <span>Done</span> zijn</a>
+    <div class="overview_done_wrapper">
+        <div class="overview_done_link2">
+            <a href="overview.php">Klik hier voor de overzicht van de taken die To-Do & Doing zijn</a>
         </div>
      </div>
-
 </body>
 </html>

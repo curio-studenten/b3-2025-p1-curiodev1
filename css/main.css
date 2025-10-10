@@ -616,6 +616,13 @@ nav a:not(:hover) {
 
 }
 
+.overview_h1{
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
 
 .table_container{
   display: flex;
@@ -652,4 +659,37 @@ table a{
   text-decoration: none;
   color: rgb(255, 255, 255);
   border-bottom: 1px solid whitesmoke;
+}
+
+
+.overview_done_link{
+  margin-top: 5%;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.overview_done_link2{
+  margin-top: 5%;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.overview_done_link a{
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.overview_done_link2 a{
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.overview_done_wrapper{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 60%;
 }
