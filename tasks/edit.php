@@ -60,10 +60,24 @@
             </select>
 
             <div class="buttons">
-                <button type="submit">Opslaan</button>
-                <a href="overview.php" class="cancel">Annuleren</a>
+                <button class="submit_btn" type="submit">Opslaan</button>
+                
+
+                
+            </form>
+                <form action="<?php echo $base_url . '/backend/tasksController.php'; ?>" method="POST">
+                    <input type="hidden" name="action" value="delete">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                        
+                            <div class="save_delete">
+                                <a class="discard_btn" href="overview.php" class="cancel">Annuleren</a>
+                                <input class="delete_btn" type="submit" value="Verwijderen">
+                            </div>
+                        
+
+                </form>
             </div>
-        </form>
+
   </div>
     
 </body>

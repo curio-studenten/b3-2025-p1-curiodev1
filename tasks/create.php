@@ -30,8 +30,9 @@
       </select>
 
       <div class="buttons">
-        <button type="submit">Opslaan</button>
-        <a href="index.php" class="cancel">Annuleren</a>
+          <button class="submit_btn" type="submit">Opslaan</button>
+          <a class="discard_btn" href="index.php" class="cancel">Annuleren</a>
+
       </div>
     </form>
   </div>

@@ -82,35 +82,110 @@ textarea {
 .buttons {
   text-align: center;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+
+.submit-btn{
+  background-color: blue;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
-a.cancel {
-  display: inline-block;
-  margin-left: 15px;
-  padding: 10px 20px;
-  border-radius: 6px;
+.save_delete a{
   text-decoration: none;
-  font-size: 16px;
-  color: #333;
-  background-color: #e0e0e0;
-  transition: background-color 0.2s;
+  color: whitesmoke;
 }
 
-a.cancel:hover {
-  background-color: #bdbdbd;
+.submit_btn {
+  background-color: #39ff14;
+  color: grey; 
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 
+    0 0 3px #39ff14,
+    0 0 15px #39ff14,
+    0 0 30px #39ff14,
+    0 0 65px #39ff14;
+}
+
+.submit_btn:hover {
+  box-shadow: 
+    0 0 10px #39ff14,
+    0 0 30px #39ff14,
+    0 0 60px #39ff14,
+    0 0 120px #39ff14;
+    transition: 0.3s ease;
+}
+
+
+
+.discard_btn {
+  background-color: #555;
+  color: whitesmoke;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-right: 15px;
+  box-shadow: 
+    0 0 5px #aaa,
+    0 0 20px #aaa,
+    0 0 40px #aaa,
+    0 0 80px #aaa;
+}
+
+.discard_btn:hover {
+  box-shadow: 
+    0 0 10px #aaa,
+    0 0 30px #aaa,
+    0 0 60px #aaa,
+    0 0 120px #aaa;
+    transition: 0.3s ease;
+
+}
+
+
+.delete_btn{
+  background-color: #ff1a1a; 
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 
+    0 0 5px #ff1a1a,
+    0 0 20px #ff1a1a,
+    0 0 40px #ff1a1a,
+    0 0 80px #ff1a1a;
+}
+
+.delete_btn:hover {
+  box-shadow: 
+    0 0 10px #ff1a1a,
+    0 0 30px #ff1a1a,
+    0 0 60px #ff1a1a,
+    0 0 120px #ff1a1a;
+    transition: 0.3s ease;
+}
+
+.discard_btn {
+  background: gray;
+  color: white;
+}
+
+.delete_btn {
+  background: red;
+  color: white;
 }

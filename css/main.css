@@ -562,18 +562,30 @@ nav a:not(:hover) {
 }
 
 .doing_tasks{
+  flex: 1;
   width: 99%;
   border-bottom-left-radius: 13%;
+  overflow-y: auto;
   border-bottom-right-radius: 13%;
   height: 90%;
   background-color: rgb(110, 110, 110, 0.5);
+  scrollbar-width: none;             
+  scrollbar-color: whitesmoke;
+  box-sizing: border-box;
+  padding-bottom: 42px;
 }
 .done_tasks{
+  flex: 1;
   width: 99%;
   border-bottom-left-radius: 13%;
+  overflow-y: auto;
   border-bottom-right-radius: 13%;
   height: 90%;
   background-color: rgb(110, 110, 110, 0.5);
+  scrollbar-width: none;             
+  scrollbar-color: whitesmoke;
+  box-sizing: border-box;
+  padding-bottom: 42px;
 }
 
 .todo_main{
