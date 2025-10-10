@@ -15,7 +15,6 @@
             <nav>
             <a href="index.php">Home</a>
             <a href="tasks/index.php">Takenlijst</a>
-            <a href="tasks/overview.php">Overview</a>
 
             
             </nav>

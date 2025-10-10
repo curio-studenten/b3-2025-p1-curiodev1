@@ -10,18 +10,6 @@
 
 </head>
 <body class="tasks_index_body">
-    <section class="header_tasks">
-        <header>
-        <div class="wrapper">
-            <img class="header_logo" src="../img/logo-big-v2.png" alt="">
-            <nav>
-            <a href="../index.php">Home</a>
-            <a href="index.php">Takenlijst</a>
-            <a href="overview.php">Overview</a> 
-            </nav>
-        </div> 
-        </header>
-    </section>
 
     <div class="overview_h1">
         <h1>Taken met status To-Do & Doing</h1>
@@ -60,9 +48,9 @@
             <?php endforeach; ?>
         </table>
      </div>
-     <div class="overview_done_wrapper">
-        <div class="overview_done_link">
-            <a href="done.php">Klik hier voor de overzicht van de taken die <span>Done</span> zijn</a>
+     <div class="taak_link_wrapper">
+        <div class="link_taak">
+            <a href="index.php">>Terug naar de takenlijst</a>
         </div>
      </div>
 
