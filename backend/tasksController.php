@@ -1,5 +1,9 @@
-<<?php
-$action = $_POST['action'];
+<?php
+$action = $_POST['action'] ?? null;
+if (!$action) {
+    header("Location: ../tasks/index.php");
+    exit;
+}
 
 
 if($action == "create"){
