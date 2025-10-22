@@ -65,7 +65,8 @@
 
                 
             </form>
-                <form action="<?php echo $base_url . '/backend/tasksController.php'; ?>" method="POST">
+                <form action="<?php echo $base_url . '/backend/tasksController.php'; ?>" method="POST"
+                        onsubmit="return confirm('Weet je zeker dat je deze taak wilt verwijderen?');">
                     <input type="hidden" name="action" value="delete">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
                         
