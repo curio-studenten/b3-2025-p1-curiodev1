@@ -1,9 +1,5 @@
-<?php
-$action = $_POST['action'] ?? null;
-if (!$action) {
-    header("Location: ../tasks/index.php");
-    exit;
-}
+<<?php
+$action = $_POST['action'];
 
 
 if($action == "create"){
@@ -14,12 +10,21 @@ if($action == "create"){
     $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
 
-    if(isset($errors))
-    {
+    $errors = [];
+
+    if ($titel === '' || $beschrijving === '' || $afdeling === '') {
+        $errors[] = "Vul alle velden in (titel, beschrijving en afdeling).";
+    }
+
+    $allowed = ['personeel','horeca','techniek','inkoop','klantenservice','groen'];
+    if (!in_array($afdeling, $allowed)) {
+        $errors[] = "Ongeldige afdeling gekozen.";
+    }
+
+    if (!empty($errors)) {
         var_dump($errors);
         die();
     }
-
     require_once 'conn.php';
 
     $query = "INSERT INTO taken (titel, beschrijving,  afdeling) 
