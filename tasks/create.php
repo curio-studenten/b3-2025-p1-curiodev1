@@ -29,6 +29,9 @@
         <option value="groen">Groen</option>
       </select>
 
+      <label for="deadline">Deadline:</label>
+      <input type="date" id="deadline" name="deadline" required>
+
       <div class="buttons">
           <button class="submit_btn" type="submit">Opslaan</button>
           <a class="discard_btn" href="index.php" class="cancel">Annuleren</a>
