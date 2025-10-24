@@ -19,7 +19,7 @@
                     <a href="../index.php">Home</a>
                     <a href="index.php">Takenlijst</a>
                 </nav>
-        </div>
+            </div>
         
         </header>
     </section>
