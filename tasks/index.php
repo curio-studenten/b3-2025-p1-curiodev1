@@ -19,7 +19,7 @@
                     <a href="../index.php">Home</a>
                     <a href="index.php">Takenlijst</a>
                 </nav>
-            </div>
+        </div>
         
         </header>
     </section>
@@ -34,7 +34,12 @@
                 <a href="done.php">>Klik hier voor de overzicht van de taken die <span>Done</span> zijn</a>
             </div>
         </div>
-        
+                <div class="afdeling_info">
+            <div class="afdeling_link">
+                <a href="afdeling.php">>Klik hier voor de overzicht van de <span>Afdeling</span> te zien</a>
+            </div>
+        </div>
+
     <div class="kanban_container">
         <div class="todo_container">
             <h2>To-Do</h2>
