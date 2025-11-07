@@ -744,3 +744,120 @@ table a{
   margin: 0 auto;
   width: 60%;
 }
+
+/* ===== Afdeling page styles (tasks/afdeling.php) ===== */
+.afdeling_page {
+  position: relative;
+  z-index: 1;
+}
+
+.afdeling_header {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  padding-top: 7%;
+}
+
+.afdeling_grid {
+  width: 82%;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.afdeling_card {
+  background-color: rgb(54, 54, 54);
+  color: whitesmoke;
+  border: 2px solid rgba(245, 245, 245, 0.85);
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.afdeling_card h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.afdeling_stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.chip {
+  background: rgba(0,0,0,0.25);
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.afdeling_actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.afdeling_toggle {
+  cursor: pointer;
+  border: 3px solid whitesmoke;
+  color: whitesmoke;
+  background: rgba(0,0,0,0.25);
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+.afdeling_toggle:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
+.tasks_list {
+  margin-top: 12px;
+  border-top: 1px dashed rgba(255,255,255,0.4);
+  padding-top: 10px;
+}
+
+.task_item {
+  background: rgba(110,110,110,0.5);
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task_item p {
+  margin: 4px 0;
+}
+
+.task_item a {
+  color: whitesmoke;
+  text-decoration: none;
+  border-bottom: 1px solid whitesmoke;
+  font-weight: bold;
+}
+
+.back_link_wrap {
+  width: 82%;
+  margin: 20px auto 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+.back_link_wrap a {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid whitesmoke;
+  color: whitesmoke;
+}
