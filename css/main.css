@@ -707,6 +707,26 @@ table a{
   width: 81%;
 }
 
+.afdeling_link{
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 15px;
+
+}
+
+.afdeling_info{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 81%;}
+
+.afdeling_link a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
 .link_taak{
   margin-top: 20px;
 }
