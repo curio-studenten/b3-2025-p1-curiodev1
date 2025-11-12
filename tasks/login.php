@@ -68,7 +68,7 @@ if (!isset($_SESSION['csrf_token'])) {
                 </div>
 
                 <div class="form_actions">
-                    <button type="submit" class="btn">Inloggen</button>
+                    <button type="submit" class="btn-login">Inloggen</button>
                 </div>
             </form>
         </div>
