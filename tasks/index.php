@@ -18,6 +18,7 @@
                 <nav>
                     <a href="../index.php">Home</a>
                     <a href="index.php">Takenlijst</a>
+                    <a href="login.php">Login</a>
                 </nav>
         </div>
         
