@@ -15,8 +15,7 @@
             <nav>
             <a href="index.php">Home</a>
             <a href="tasks/index.php">Takenlijst</a>
-
-            
+            <a href="tasks/login.php">Login</a>
             </nav>
         </div>
         
