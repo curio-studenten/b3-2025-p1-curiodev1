@@ -11,7 +11,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -93,28 +94,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 
-.container{
-    max-width: 1024px;
-    margin: 0 auto;
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-.form-group{
-    margin: 1rem 0;
+.form-group {
+  margin: 1rem 0;
 }
 
-label{
-    cursor: pointer;
-    display: inline-block;
-    min-width: 140px;
-    vertical-align: top;
+label {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 140px;
+  vertical-align: top;
 }
 
-.form-input{
-    width: 600px;
+.form-input {
+  width: 600px;
 }
 
 
@@ -213,9 +214,9 @@ label{
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -226,6 +227,7 @@ label{
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -316,6 +318,7 @@ label{
   background-color: rgba(44, 44, 44, 0.4);
   z-index: 1;
 }
+
 .tasks_index_body {
   position: relative;
   margin: 0;
@@ -335,31 +338,34 @@ label{
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
-  z-index: -1 ;
+  z-index: -1;
 }
 
-.wrapper, nav, .homepage, .text_container {
+.wrapper,
+nav,
+.homepage,
+.text_container {
   position: relative;
   z-index: 1;
 }
 
-.wrapper{
-    
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
-    
+.wrapper {
+
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+
 }
 
-.wrapper h1{
-    font-size: 2rem;
-    font-family: "Roboto", sans-serif;
+.wrapper h1 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
-nav{
+nav {
   width: 40%;
   gap: 40px;
   display: flex;
@@ -367,7 +373,7 @@ nav{
 
 }
 
-nav a{
+nav a {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
@@ -379,16 +385,16 @@ nav a{
   color: whitesmoke;
   border-radius: 12px;
   font-weight: bold;
-  
+
 }
 
 
 
 
 
-.header_logo{
+.header_logo {
   width: 120px;
-  
+
 }
 
 
@@ -401,27 +407,37 @@ nav a:not(:hover) {
 }
 
 @keyframes expand {
-  from { width: 200px; }
-  to   { width: 500px; }
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 500px;
+  }
 
 }
 
 @keyframes shrink {
-  from { width: 500px; }
-  to   { width: 200px; }
-  
+  from {
+    width: 500px;
+  }
+
+  to {
+    width: 200px;
+  }
+
 }
 
-.homepage_logo{
+.homepage_logo {
   width: 500px;
 }
 
-.homepage{
+.homepage {
   display: flex;
   justify-content: center;
 }
 
-.container{
+.container {
   width: 700px;
   height: 200px;
   display: flex;
@@ -430,7 +446,7 @@ nav a:not(:hover) {
   text-align: center;
 }
 
-.text_container{
+.text_container {
   margin-top: 200px;
   padding: 20px;
   background-color: white;
@@ -453,20 +469,30 @@ nav a:not(:hover) {
 }
 
 @keyframes bigger {
-  from { scale: 1; }
-  to   { scale: 1.1; }
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.1;
+  }
 
 }
 
 @keyframes smallerr {
-  from { scale: 1.1; }
-  to   { scale: 1; }
-  
+  from {
+    scale: 1.1;
+  }
+
+  to {
+    scale: 1;
+  }
+
 }
 
 
 
-.text_container:hover{
+.text_container:hover {
   scale: 1.2;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
   transition: 0.4s ease;
@@ -487,7 +513,7 @@ nav a:not(:hover) {
   transition: 0.2s ease;
 }
 
-.new-task{
+.new-task {
   display: flex;
   justify-content: center;
 }
@@ -502,20 +528,20 @@ nav a:not(:hover) {
 }
 
 
-.kanban_container{
+.kanban_container {
   display: flex;
   justify-content: space-evenly;
   padding-top: 35px;
 }
 
-.kanban_container h2{
+.kanban_container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: whitesmoke;
   font-size: 1.8rem;
 }
 
-.todo_container{
+.todo_container {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
   border-radius: 13%;
   width: 400px;
@@ -528,7 +554,8 @@ nav a:not(:hover) {
   border: 4px solid rgb(31, 31, 31, 0.6);
 
 }
-.doing_container{
+
+.doing_container {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
   border-radius: 13%;
   width: 400px;
@@ -541,7 +568,8 @@ nav a:not(:hover) {
   border: 4px solid rgb(31, 31, 31, 0.6);
 
 }
-.done_container{
+
+.done_container {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
   border-radius: 13%;
   width: 400px;
@@ -553,11 +581,11 @@ nav a:not(:hover) {
   align-items: center;
   border: 4px solid rgb(31, 31, 31, 0.6);
 
-  
+
 }
 
 
-.todo_tasks{
+.todo_tasks {
   flex: 1;
   width: 99%;
   border-bottom-left-radius: 13%;
@@ -565,13 +593,13 @@ nav a:not(:hover) {
   border-bottom-right-radius: 13%;
   height: 90%;
   background-color: rgb(110, 110, 110, 0.5);
-  scrollbar-width: none;             
+  scrollbar-width: none;
   scrollbar-color: whitesmoke;
   box-sizing: border-box;
   padding-bottom: 42px;
 }
 
-.doing_tasks{
+.doing_tasks {
   flex: 1;
   width: 99%;
   border-bottom-left-radius: 13%;
@@ -579,12 +607,13 @@ nav a:not(:hover) {
   border-bottom-right-radius: 13%;
   height: 90%;
   background-color: rgb(110, 110, 110, 0.5);
-  scrollbar-width: none;             
+  scrollbar-width: none;
   scrollbar-color: whitesmoke;
   box-sizing: border-box;
   padding-bottom: 42px;
 }
-.done_tasks{
+
+.done_tasks {
   flex: 1;
   width: 99%;
   border-bottom-left-radius: 13%;
@@ -592,18 +621,18 @@ nav a:not(:hover) {
   border-bottom-right-radius: 13%;
   height: 90%;
   background-color: rgb(110, 110, 110, 0.5);
-  scrollbar-width: none;             
+  scrollbar-width: none;
   scrollbar-color: whitesmoke;
   box-sizing: border-box;
   padding-bottom: 42px;
 }
 
-.todo_main{
+.todo_main {
   width: 100%;
   border-radius: 15px;
   box-sizing: border-box;
   padding-top: 1px;
-  padding-bottom:  12px;
+  padding-bottom: 12px;
   padding-left: 5px;
   padding-right: 5px;
   background-color: grey;
@@ -614,11 +643,11 @@ nav a:not(:hover) {
 
 }
 
-.todo_main span{
+.todo_main span {
   font-weight: bold;
 }
 
-.todo_main a{
+.todo_main a {
   text-decoration: none;
   color: whitesmoke;
   border-bottom: 1px solid whitesmoke;
@@ -626,7 +655,7 @@ nav a:not(:hover) {
 
 }
 
-.overview_h1{
+.overview_h1 {
   display: flex;
   justify-content: center;
   color: whitesmoke;
@@ -635,7 +664,7 @@ nav a:not(:hover) {
 }
 
 
-.table_container{
+.table_container {
   display: flex;
   justify-content: center;
   margin-top: 3%;
@@ -646,7 +675,7 @@ table {
   width: 60%;
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid whitesmoke;
@@ -666,24 +695,24 @@ td {
   color: rgb(255, 255, 255);
 }
 
-table a{
+table a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   border-bottom: 1px solid whitesmoke;
 }
 
 
-.overview_done_link{
+.overview_done_link {
   border-bottom: 2px solid whitesmoke;
   margin-top: 15px;
 
 }
 
-.overview_done_link2{
+.overview_done_link2 {
   border-bottom: 2px solid whitesmoke;
 }
 
-.overview_done_link a{
+.overview_done_link a {
   text-decoration: none;
   font-size: 1.2rem;
   color: whitesmoke;
@@ -691,7 +720,7 @@ table a{
   font-weight: bold;
 }
 
-.overview_done_link2 a{
+.overview_done_link2 a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.2rem;
@@ -700,26 +729,27 @@ table a{
 }
 
 
-.overview_done_wrapper{
+.overview_done_wrapper {
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
   width: 81%;
 }
 
-.afdeling_link{
+.afdeling_link {
   border-bottom: 2px solid whitesmoke;
   margin-top: 15px;
 
 }
 
-.afdeling_info{
+.afdeling_info {
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
-  width: 81%;}
+  width: 81%;
+}
 
-.afdeling_link a{
+.afdeling_link a {
   text-decoration: none;
   font-size: 1.2rem;
   color: whitesmoke;
@@ -727,11 +757,11 @@ table a{
   font-weight: bold;
 }
 
-.link_taak{
+.link_taak {
   margin-top: 20px;
 }
 
-.link_taak a{
+.link_taak a {
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
@@ -740,7 +770,7 @@ table a{
   color: whitesmoke;
 }
 
-.taak_link_wrapper{
+.taak_link_wrapper {
   margin: 0 auto;
   width: 60%;
 }
@@ -790,7 +820,7 @@ table a{
 }
 
 .chip {
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   border: 2px solid whitesmoke;
   color: whitesmoke;
   border-radius: 999px;
@@ -810,12 +840,13 @@ table a{
   cursor: pointer;
   border: 3px solid whitesmoke;
   color: whitesmoke;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   padding: 8px 12px;
   border-radius: 12px;
   font-weight: bold;
   transition: 0.2s ease;
 }
+
 .afdeling_toggle:hover {
   filter: brightness(1.15);
   transform: translateY(-2px);
@@ -823,12 +854,12 @@ table a{
 
 .tasks_list {
   margin-top: 12px;
-  border-top: 1px dashed rgba(255,255,255,0.4);
+  border-top: 1px dashed rgba(255, 255, 255, 0.4);
   padding-top: 10px;
 }
 
 .task_item {
-  background: rgba(110,110,110,0.5);
+  background: rgba(110, 110, 110, 0.5);
   border: 2px solid whitesmoke;
   color: whitesmoke;
   border-radius: 12px;
@@ -853,6 +884,7 @@ table a{
   display: flex;
   justify-content: flex-start;
 }
+
 .back_link_wrap a {
   font-weight: bold;
   font-size: 1.1rem;
@@ -860,4 +892,106 @@ table a{
   font-family: "Roboto", sans-serif;
   border-bottom: 2px solid whitesmoke;
   color: whitesmoke;
+}
+
+/* ===== Login (tasks/login.php) ===== */
+.login_container {
+  display: flex;
+  justify-content: center;
+}
+
+.login_card {
+  width: min(520px, 92vw);
+  background-color: rgb(54, 54, 54);
+  color: whitesmoke;
+  border: 2px solid rgba(245, 245, 245, 0.85);
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.08);
+  padding: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login_card h1 {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.login_card p.sub {
+  margin: 0 0 18px;
+  opacity: .9;
+  text-align: center;
+}
+
+.form_row {
+  margin-bottom: 14px;
+}
+
+.form_row label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form_row input[type="text"],
+.form_row input[type="password"] {
+  width: 90%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  background: rgba(0, 0, 0, 0.25);
+  color: whitesmoke;
+  font-size: 1rem;
+  outline: none;
+}
+
+.pw_wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.pw_toggle {
+  border: 3px solid whitesmoke;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.pw_toggle:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
+.form_inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 4px;
+}
+
+.form_actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.form-errors {
+  background: #ffe8e6;
+  color: #8a1f11;
+  border: 1px solid #f5c2c0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.form-errors ul {
+  margin: 0;
+  padding-left: 18px;
 }
