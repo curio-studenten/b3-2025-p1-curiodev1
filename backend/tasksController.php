@@ -1,6 +1,15 @@
-<<?php
-$action = $_POST['action'];
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: ../tasks/login.php');
+    exit;
+}
 
+$action = $_POST['action'] ?? null;
+if (!$action) {
+    header("Location: ../tasks/index.php");
+    exit;
+}
 
 if($action == "create"){
 
@@ -81,6 +90,5 @@ if($action == "delete"){
 }
 
 header("Location: ../tasks/index.php");
-
 exit;
 ?>
