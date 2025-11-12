@@ -189,3 +189,12 @@ textarea {
   background: red;
   color: white;
 }
+
+
+.deadline{
+  width: 30%;
+  padding: 12px 24px;
+  background-color: rgb(170, 170, 170);
+  border-radius: 7px;
+  
+}

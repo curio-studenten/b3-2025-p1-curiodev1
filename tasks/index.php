@@ -63,6 +63,7 @@
                             <p><span>Titel:</span> <?= ($item['titel']); ?></p>
                             <p><span>Afdeling:</span> <?= ($item['afdeling']); ?></p>
                             <p><span>Beschrijving:</span> <?= ($item['beschrijving']); ?></p>
+                            <p><span>Deadline:</span> <?= ($item['deadline']); ?></p>
                             <a href="edit.php?id=<?= $item['id']; ?>">Bekijk inhoud of pas aan</a>
                         </div>
                     <?php endif; ?>
@@ -79,6 +80,7 @@
                             <p><span>Titel:</span> <?= ($item['titel']); ?></p>
                             <p><span>Afdeling:</span> <?= ($item['afdeling']); ?></p>
                             <p><span>Beschrijving:</span> <?= ($item['beschrijving']); ?></p>
+                            <p><span>Deadline:</span> <?= ($item['deadline']); ?></p>
                             <a href="edit.php?id=<?= $item['id']; ?>">Bekijk inhoud of pas aan</a>
                         </div>
                     <?php endif; ?>
@@ -95,6 +97,7 @@
                                 <p><span>Titel:</span> <?= ($item['titel']); ?></p>
                                 <p><span>Afdeling:</span> <?= ($item['afdeling']); ?></p>
                                 <p><span>Beschrijving:</span> <?= ($item['beschrijving']); ?></p>
+                                <p><span>Deadline:</span> <?= ($item['deadline']); ?></p>
                                 <a href="edit.php?id=<?= $item['id']; ?>">Bekijk inhoud of pas aan</a>
                             </div>
                         <?php endif; ?>

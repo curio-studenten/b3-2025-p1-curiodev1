@@ -84,8 +84,8 @@
                             <?php foreach ($groups[$dept] as $t): ?>
                                 <div class="task_item">
                                     <p><strong>Titel:</strong> <?= htmlspecialchars($t['titel']) ?></p>
-                                    <p><strong>Status:</strong> <?= htmlspecialchars($t['status']) ?></p>
                                     <p><strong>Beschrijving:</strong> <?= htmlspecialchars($t['beschrijving']) ?></p>
+                                    <p><strong>Status:</strong> <?= htmlspecialchars($t['status']) ?></p>
                                     <p><a href="edit.php?id=<?= (int)$t['id'] ?>">Bekijk inhoud of pas aan</a></p>
                                 </div>
                             <?php endforeach; ?>

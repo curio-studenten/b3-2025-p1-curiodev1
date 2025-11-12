@@ -30,7 +30,7 @@
       </select>
 
       <label for="deadline">Deadline:</label>
-      <input type="date" id="deadline" name="deadline" required>
+      <input class="deadline" type="date" id="deadline" name="deadline" required>
 
       <div class="buttons">
           <button class="submit_btn" type="submit">Opslaan</button>

@@ -59,6 +59,10 @@
 
             </select>
 
+            
+            <label for="deadline">Deadline:</label>
+            <input class="deadline" type="date" id="deadline" name="deadline" value="<?php echo $taak['deadline']; ?>" required>
+
             <div class="buttons">
                 <button class="submit_btn" type="submit">Opslaan</button>
                 
