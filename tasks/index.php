@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user'])) {
-    header('Location: login.php');
+    header('Location: ../login.php');
     exit;
 }
 ?>
@@ -25,9 +25,15 @@ if (!isset($_SESSION['user'])) {
                 <nav>
                     <a href="../index.php">Home</a>
                     <a href="index.php">Takenlijst</a>
-                    <a href="login.php">Login</a>
+                    <?php
+                    if (isset($_SESSION['user'])) {
+                        echo '<a href="/logout.php">Uitloggen</a>';
+                    } else {
+                        echo '<a href="/login.php">Inloggen</a>';
+                    }
+                    ?>
                 </nav>
-        </div>
+            </div>
         
         </header>
     </section>
@@ -47,6 +53,12 @@ if (!isset($_SESSION['user'])) {
                 <a href="afdeling.php">>Klik hier voor de overzicht van de <span>Afdeling</span> te zien</a>
             </div>
         </div>
+        <div class="overview_done_wrapper">
+            <div class="overview_done_link">
+                <a href="my.php">>Klik hier om jou gemaakte taken te zien</a>
+            </div>
+        </div>
+        
 
     <div class="kanban_container">
         <div class="todo_container">

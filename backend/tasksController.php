@@ -5,6 +5,8 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 
+$user_id = $_SESSION['user']['id'];;
+
 $action = $_POST['action'] ?? null;
 if (!$action) {
     header("Location: ../tasks/index.php");
@@ -37,8 +39,8 @@ if($action == "create"){
     }
     require_once 'conn.php';
 
-    $query = "INSERT INTO taken (titel, beschrijving,  afdeling, deadline) 
-    VALUES (:titel, :beschrijving, :afdeling, :deadline)";
+    $query = "INSERT INTO taken (titel, beschrijving,  afdeling, deadline, user) 
+    VALUES (:titel, :beschrijving, :afdeling, :deadline, :user)";
 
     $statement = $conn->prepare($query);
 
@@ -47,6 +49,7 @@ if($action == "create"){
         ":beschrijving" => $beschrijving,
         ":afdeling" => $afdeling,
         ":deadline" => $deadline,
+        ":user" => $user_id,
     ]);
 }
 

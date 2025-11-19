@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+
 <!Doctype html>
 <html lang="nl">
 
@@ -15,7 +18,13 @@
             <nav>
             <a href="index.php">Home</a>
             <a href="tasks/index.php">Takenlijst</a>
-            <a href="tasks/login.php">Login</a>
+            <?php
+            if (isset($_SESSION['user'])) {
+                echo '<a href="logout.php">Uitloggen</a>';
+            } else {
+                echo '<a href="login.php">Inloggen</a>';
+            }
+            ?>
             </nav>
         </div>
         
