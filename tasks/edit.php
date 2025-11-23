@@ -77,7 +77,7 @@ if (!isset($_SESSION['user'])) {
 
 
 
-        
+        </form>
         <form action="<?php echo $base_url . '../backend/tasksController.php'; ?>" method="POST">
             <input type="hidden" name="action" value="delete">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
