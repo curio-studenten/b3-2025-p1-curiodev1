@@ -2,13 +2,13 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: ../tasks/login.php');
+    header('Location: ../login.php');
     exit;
 }
 
 if (!isset($_POST['csrf_token'], $_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
     $_SESSION['errors'] = ['Ongeldige sessie.'];
-    header('Location: ../tasks/login.php');
+    header('Location: ../login.php');
     exit;
 }
 
@@ -27,7 +27,7 @@ if ($password === '' || strlen($password) < 6) {
 if ($errors) {
     $_SESSION['errors'] = $errors;
     $_SESSION['old'] = ['identifier' => $identifier, 'remember' => $remember];
-    header('Location: ../tasks/login.php');
+    header('Location: ../login.php');
     exit;
 }
 
@@ -40,7 +40,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!$user || !password_verify($password, $user['password'])) {
     $_SESSION['errors'] = ['Combinatie gebruikersnaam/wachtwoord klopt niet.'];
     $_SESSION['old'] = ['identifier' => $identifier, 'remember' => $remember];
-    header('Location: ../tasks/login.php');
+    header('Location: ../login.php');
     exit;
 }
 
