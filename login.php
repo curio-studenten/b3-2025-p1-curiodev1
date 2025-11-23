@@ -20,7 +20,7 @@ if (!isset($_SESSION['csrf_token'])) {
     <section class="header">
         <header>
             <div class="wrapper">
-                <img class="header_logo" src="../img/logo-big-v2.png" alt="">
+                <img class="header_logo" src="/img/logo-big-v2.png" alt="">
                 <nav>
                     <a href="../index.php">Home</a>
                     <a href="index.php">Takenlijst</a>
@@ -44,11 +44,11 @@ if (!isset($_SESSION['csrf_token'])) {
                 </div>
             <?php endif; ?>
 
-            <form action="../backend/loginController.php" method="post" autocomplete="on">
+            <form action="/backend/loginController.php" method="post" autocomplete="on">
                 <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token']) ?>">
                 <div class="form_row">
                     <label for="login_ident">E-mailadres of gebruikersnaam</label>
-                    <input type="text" id="login_ident" name="identifier" placeholder="bijv. email@bedrijf.nl of email123"
+                    <input type="text" id="login_ident" name="identifier" placeholder="bijv. user123"
                         required minlength="3" maxlength="255" autofocus
                         value="<?= htmlspecialchars($old['identifier'] ?? '') ?>">
                 </div>
