@@ -47,7 +47,7 @@ if (!isset($_SESSION['csrf_token'])) {
             <form action="/backend/loginController.php" method="post" autocomplete="on">
                 <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token']) ?>">
                 <div class="form_row">
-                    <label for="login_ident">E-mailadres of gebruikersnaam</label>
+                    <label for="login_ident">Gebruikersnaam</label>
                     <input type="text" id="login_ident" name="identifier" placeholder="bijv. user123"
                         required minlength="3" maxlength="255" autofocus
                         value="<?= htmlspecialchars($old['identifier'] ?? '') ?>">
