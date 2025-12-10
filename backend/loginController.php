@@ -56,7 +56,7 @@ if ($remember) {
     setcookie(session_name(), session_id(), [
         'expires'  => time() + 60 * 60 * 24 * 7,
         'path'     => '/',
-        'secure'   => false,
+        'secure'   => true,
         'httponly' => true,
         'samesite' => 'Lax'
     ]);
